@@ -10,6 +10,8 @@ services:
     volumes:
       # volume used to access the `notebooks` folder
       - ../notebooks:/home/coder/project
+      # new volume mapping for the docker folder
+      - ./docker:/home/coder/project/docker
     env_file:
       - .env
 
